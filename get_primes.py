@@ -4,22 +4,13 @@ args = sys.argv
 
 loops = args[1]
 
-def is_prime(num, l):
-	for i in range(1, len(l)):
-		if num % l[i] == 0:
+def is_prime(num, ls):
+	for i in range(1, len(ls)):
+		if num in ls:
+			return False
+		if num % ls[i] == 0:
 			return False
 	return True
-
-
-# [1, 2, 3, 5, 7]
-
-# 11 % 1 != 0
-# 11 % 2 != 0
-# 11 % 3 != 0
-# 11 % 5 != 0
-# 11 % 7 != 0
-
-
 
 
 def get_primes(loops=int(loops)):
