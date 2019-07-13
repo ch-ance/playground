@@ -1,8 +1,11 @@
 import sys
+import time
 
 args = sys.argv
 
 loops = args[1]
+
+start_time = tim
 
 def is_prime(num, ls):
 	for i in range(1, len(ls)):
