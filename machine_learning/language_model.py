@@ -4,12 +4,16 @@ content = f.read()
 
 sentences = []
 
-content = content.split('.')
+content = content.split('. ')
 
-for sentence in content:
+class LinkedList:
+    def __init__(self):
+        self.value = None
+        self.next = None
     
 
+for sentence in content:
+    print(sentence)
 
-print(content)
 
 f.close()
